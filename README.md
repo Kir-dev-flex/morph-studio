@@ -2,6 +2,8 @@
 
 An experimental portfolio landing page for a fictional collectible-object studio. The hero combines a depth texture, halftone scanning, WebGPU post-processing, and an interactive pointer reveal.
 
+**Live demo:** https://kir-dev-flex.github.io/morph-studio/
+
 ## Highlights
 
 - WebGPU and Three.js TSL hero scene

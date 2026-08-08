@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 
+import { getAssetUrl } from '../../lib/getAssetUrl';
 import { Header } from '../Header';
 
 const HeroCanvas = lazy(async () => {
@@ -20,7 +21,7 @@ export function Hero(): React.JSX.Element {
       <Header />
       <img
         className="hero-fallback"
-        src="/assets/hero-fallback.webp"
+        src={getAssetUrl('assets/hero-fallback.webp')}
         alt="Layered abstract MORPH sculpture"
       />
       {hasWebGPU() ? (

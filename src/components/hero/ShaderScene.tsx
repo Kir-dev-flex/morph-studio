@@ -16,6 +16,7 @@ import {
   vec3,
 } from 'three/tsl';
 
+import { getAssetUrl } from '../../lib/getAssetUrl';
 import { getArtworkScale } from './getArtworkScale';
 import { getPointerNdc, getPointerUv } from './getPointerUv';
 
@@ -35,8 +36,8 @@ export function ShaderScene(): React.JSX.Element {
   const pointerNdcRef = useRef(new THREE.Vector2(0, 0));
   const pointerUvTargetRef = useRef(new THREE.Vector2(0.5, 0.5));
   const [colorMap, depthMap] = useTexture([
-    '/assets/morph-hero-source.png',
-    '/assets/morph-hero-depth.webp',
+    getAssetUrl('assets/morph-hero-source.png'),
+    getAssetUrl('assets/morph-hero-depth.webp'),
   ]);
   const shader = useMemo(() => {
     const pointer = uniform(new THREE.Vector2(0, 0));

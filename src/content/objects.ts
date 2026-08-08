@@ -1,3 +1,5 @@
+import { getAssetUrl } from '../lib/getAssetUrl';
+
 export interface ObjectDetail {
   label: string;
   value: string;
@@ -23,7 +25,7 @@ export const collectionObjects: CollectionObject[] = [
     name: 'Fold Lamp',
     description:
       'Sculptural floor lamp composed of hand-formed ceramic folds and a diffused inner light.',
-    imageSrc: '/assets/fold-lamp.png',
+    imageSrc: getAssetUrl('assets/fold-lamp.png'),
     imageAlt: 'Fold Lamp with bone ceramic and dark metal fins',
     details: [
       { label: 'Material', value: 'Ceramic, linen, LED' },
@@ -41,7 +43,7 @@ export const collectionObjects: CollectionObject[] = [
     name: 'Mass Vessel',
     description:
       'Cast metal vessel with a grounded presence and a softly contoured rim.',
-    imageSrc: '/assets/mass-vessel.png',
+    imageSrc: getAssetUrl('assets/mass-vessel.png'),
     imageAlt: 'Mass Vessel in raw hand-cast aluminum',
     details: [
       { label: 'Material', value: 'Cast aluminium' },
