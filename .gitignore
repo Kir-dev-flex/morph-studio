@@ -1,0 +1,16 @@
+node_modules/
+dist/
+work/
+docs/superpowers/
+
+.env*
+!.env.example
+
+package-lock.json
+design-qa.md
+AGENTS.md
+
+*.local
+*.log
+.DS_Store
+Thumbs.db
